@@ -13,5 +13,10 @@ The h5py library is a modified version of the Numpy library that deals specifica
 
 You can check the two downloads working in Python by importing the libraries and then printing their version using the line (print('library_name'._version_))
 
+The HDF5 file is a more complicated version of a standard Python dictionary meaning that values in the document are essentially stored as key-value pairs. Below I will outline the structure of a generic HDF5 file that the FEI Quanta F400 outputs.
 
-The HDF5 file is a more complicated version of a standard Python dictionary meaning that values in the document are essentially stored as key-value pairs. Dictionaries fundamentally have no 
+The final file containing everything is named internally as '/'. This is called the root.
+
+In the case of our microscope, there are two groups within the root: Aquisition0 and Aquisition1. Aquisition0 is the TIFF image and Aquisition1 is the CSV-esque data table.
+
+Each of the aquisitions has 4 groups in them: ImageData, PhysicalData, SVI, 
