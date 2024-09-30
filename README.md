@@ -22,5 +22,5 @@ In the case of our microscope, there are two groups within the root: Acquisition
 
 Each of the acquisitions has 4 groups in them: ImageData, PhysicalData, SVIData, StateEnumeration.
 
-ImageData is a group that contains 10 subgroups for the TIFF and 11 subgroups for the CSV-esque data table: DimensionScaleX, DimensionScaleY, DimensionScaleZ, PrimaryGlassMediumInterfacePosition, SecondaryGlassMediumInterfacePosition, TOffset, XOffSet,
-YOffset, ZOffset.
+ImageData is a group that contains 10 subgroups for the TIFF and 11 subgroups for the CSV-esque data table: Image, DimensionScaleX, DimensionScaleY, DimensionScaleZ, PrimaryGlassMediumInterfacePosition, SecondaryGlassMediumInterfacePosition, TOffset, XOffSet,
+YOffset, ZOffset. These however are mostly all empty in both cases. The only data of interest is the Image array for the TIFF and the DimensionScaleC (wavelength) and Image (intensity) arrays for the intensity-wavelength plots
