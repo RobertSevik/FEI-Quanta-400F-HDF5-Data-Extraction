@@ -7,11 +7,11 @@ To run this code successfully, the user would need to only have 3 Python librari
 
 The os library is the Python library that deals with data paths and file directories, it is the key for the code to navigate to and from your folder when accessing data or uploading the newly created CSVs. There is nothing to install here. The os library is already preinstalled with the installation of Python.
 
-The Pandas library is used for the conversion of the raw metadata into Python interpretable arrays. This library will have to be enabled using the Command window/PowerShell Prompt and type in the command (cmd). Then type (pip install pandas).
+The Pandas library is used for the conversion of the raw metadata into Python interpretable arrays. This library will have to be enabled using the Command window/PowerShell Prompt. Type in the command (cmd). Then type (pip install pandas).
 
-The h5py library is a modified version of the Numpy library that deals specifically with this file format. This library will have to be enabled using the Command window/PowerShell Prompt and type in the command (cmd). Then type (pip install h5py).
+The h5py library is a modified version of the Numpy library that deals specifically with this file format. This library will have to be enabled using the Command window/PowerShell Prompt. Type in the command (cmd). Then type (pip install h5py).
 
-You can check the two downloads working in Python by importing the libraries and then printing their version using the line (print('library_name'._version_))
+You can check the two downloads working in Python by importing the libraries and then printing their version using the line (print('library_name'._version_)) *the word version is surrounded by underscores, I realized that does not pop up on the ReadMe*
 
 The HDF5 file is a more complicated version of a standard Python dictionary meaning that values in the document are essentially stored as key-value pairs. Below I will outline the structure of a generic HDF5 file that the FEI Quanta F400 outputs.
 
