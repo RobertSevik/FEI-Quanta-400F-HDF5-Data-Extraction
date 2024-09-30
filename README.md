@@ -18,6 +18,9 @@ The HDF5 file is a more complicated version of a standard Python dictionary mean
 
 The final file containing everything is named internally as '/'. This is called the root, essentially the container that contains everything else.
 
-In the case of our microscope, there are two groups within the root: Aquisition0 and Aquisition1. Aquisition0 is the TIFF image and Aquisition1 is the CSV-esque data table.
+In the case of our microscope, there are two groups within the root: Acquisition0 and Acquisition1. Acquisition0 is the TIFF image and Acquisition1 is the CSV-esque data table.
 
-Each of the aquisitions has 4 groups in them: ImageData, PhysicalData, SVI, 
+Each of the acquisitions has 4 groups in them: ImageData, PhysicalData, SVIData, StateEnumeration.
+
+ImageData is a group that contains 10 subgroups for the TIFF and 11 subgroups for the CSV-esque data table: DimensionScaleX, DimensionScaleY, DimensionScaleZ, PrimaryGlassMediumInterfacePosition, SecondaryGlassMediumInterfacePosition, TOffset, XOffSet,
+YOffset, ZOffset.
