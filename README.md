@@ -11,11 +11,12 @@ The Pandas library is used for the conversion of the raw metadata into Python in
 
 The h5py library is a modified version of the Numpy library that deals specifically with this file format. This library will have to be enabled using the Command window/PowerShell Prompt. Type in the command (cmd). Then type (pip install h5py).
 
-You can check the two downloads working in Python by importing the libraries and then printing their version using the line (print('library_name'._version_)) *the word version is surrounded by underscores, I realized that does not pop up on the ReadMe*
+You can check the two downloads working in Python by importing the libraries and then printing their version using the line (print('library_name'._version_)) 
+*The word version is surrounded by underscores, I realized that does not pop up on the ReadMe*
 
 The HDF5 file is a more complicated version of a standard Python dictionary meaning that values in the document are essentially stored as key-value pairs. Below I will outline the structure of a generic HDF5 file that the FEI Quanta F400 outputs.
 
-The final file containing everything is named internally as '/'. This is called the root.
+The final file containing everything is named internally as '/'. This is called the root, essentially the container that contains everything else.
 
 In the case of our microscope, there are two groups within the root: Aquisition0 and Aquisition1. Aquisition0 is the TIFF image and Aquisition1 is the CSV-esque data table.
 
