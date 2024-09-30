@@ -81,4 +81,4 @@ SVIData is the smallest group by far with only 6 subgroups:
 
 This group is just the manufacturer information and other essential information about the make and software on the SEM.
 
-Lastly we have StateEnumeration.
+Lastly, we have StateEnumeration which is not a group but instead a 32-bit integer. I have no idea what purpose this serves.
