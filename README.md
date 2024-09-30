@@ -22,5 +22,63 @@ In the case of our microscope, there are two groups within the root: Acquisition
 
 Each of the acquisitions has 4 groups in them: ImageData, PhysicalData, SVIData, StateEnumeration.
 
-ImageData is a group that contains 10 subgroups for the TIFF and 11 subgroups for the CSV-esque data table: Image, DimensionScaleX, DimensionScaleY, DimensionScaleZ, PrimaryGlassMediumInterfacePosition, SecondaryGlassMediumInterfacePosition, TOffset, XOffSet,
-YOffset, ZOffset. These however are mostly all empty in both cases. The only data of interest is the Image array for the TIFF and the DimensionScaleC (wavelength) and Image (intensity) arrays for the intensity-wavelength plots
+ImageData is a group that contains 10 subgroups for the TIFF and 11 subgroups for the CSV-esque data table: 
+- Image
+- DimensionScaleC (only in the Acquisition1 case)
+- DimensionScaleX
+- DimensionScaleY
+- DimensionScaleZ
+- PrimaryGlassMediumInterfacePosition
+- SecondaryGlassMediumInterfacePosition
+- TOffset
+- XOffSet
+- YOffset
+- ZOffset
+
+These however are mostly all empty in both cases. The only data of interest is the Image array for the TIFF and the DimensionScaleC (wavelength) and Image (intensity) arrays for the intensity-wavelength plots
+
+Physical data is by far the largest group with 30 subgroups in it:
+- BackprojectedIlluminationPinholeRadius
+- BackprojectedIlluminationPinholeSpacing
+- BackprojectedPinholeRadius
+- Baseline
+- ChannelDescription
+- EmissionWavelength
+- ExcitationBeamOverfillFactor
+- ExcitationPhotonCount
+- ExcitationWavelength
+- ExtraSettings
+- HardwareName
+- HardwareVersion
+- ImagingDirection
+- ImagingDirectionEnumeration
+- ImagingDirectionStr
+- IntegrationTime
+- Magnification
+- MicroscopeMode
+- MicroscopeModeEnumeration
+- MicroscopeModeStr
+- MicroscopeType
+- MicroscopeTypeEnumeration
+- MicroscopeTypeStr
+- MirrorPositionBottom
+- MirrorPositionTop
+- NumericalAperture
+- ObjectiveQuality
+- RefractiveIndexLensImmersionMedium
+- RefractiveIndexSpecimenEmbeddingMedium
+- Title
+
+As far as I can tell, this is the group that contains all of our initial conditions.
+
+SVIData is the smallest group by far with only 6 subgroups:
+- Company
+- FileSpecificationCompatibility
+- FileSpecificationVersion
+- ImageHistory
+- URL
+- WriterVersion
+
+This group is just the manufacturer information and other essential information about the make and software on the SEM.
+
+Lastly we have StateEnumeration.
